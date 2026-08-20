@@ -21,7 +21,7 @@ The **Vehicle Rental System** is a full-stack web application built using the ME
 * **Rental Staff**: Handles customer registrations, booking confirmations, return inspections, and payment processing[cite: 1].
 * **Customer**: Browses available vehicles, requests rentals, tracks rental history, and manages profile details[cite: 1].
 
-## System Modules
+## System Modulesgit add .
 * **User Management**: Authentication, JWT session control, and role-based access permissions[cite: 1].
 * **Vehicle Management**: Inventory CRUD operations, vehicle categorization, and availability status[cite: 1].
 * **Customer Management**: Profile records, customer management, and activity tracking[cite: 1].
