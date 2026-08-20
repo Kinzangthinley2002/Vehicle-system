@@ -1,5 +1,11 @@
 # Vehicle Rental System
 
+# Team Members
+. Tashi Yoezer Tamang
+  Joel Kuzur
+  Kinzang Thinley
+  Kinzang Thinley
+
 ## Project Overview
 The **Vehicle Rental System** is a full-stack web application built using the MERN stack (MongoDB, Express.js, React.js, Node.js) designed to manage and automate operations for rental businesses offering cars, motorcycles, bicycles, or commercial vehicles[cite: 1]. It provides a centralized digital solution to manage vehicle fleets, process customer bookings, handle vehicle returns, record payments, and track fleet availability[cite: 1].
 
