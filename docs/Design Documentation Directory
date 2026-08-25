@@ -1,0 +1,30 @@
+# Sprint 3: System Design & Database Modeling - Vehicle Rental System
+
+## 1. System Modules
+* **Module 1: Authentication & User Management**: Handles registration, login, JWT token issuance, password hashing, profile management, and role-based permissions.
+* **Module 2: Vehicle Management**: Manages vehicle inventory, category creation, specs maintenance, and real-time vehicle availability tracking.
+* **Module 3: Customer Management**: Manages customer profiles, registration records, updates, and customer lookup.
+* **Module 4: Rental Management**: Handles rental booking creation, modifications, cancellations, and booking status tracking.
+* **Module 5: Return Management**: Controls vehicle returns, inspection logging, condition assessments, and updating vehicle availability.
+* **Module 6: Payment Management**: Manages rental billing, recording payments, transaction history, and revenue summary reports.
+
+---
+
+## 2. Entity Relationship Overview (ERD)
+
+### Relationships Summary
+* **Customer to Rental**: One Customer can create many Rental Bookings (1 : N).
+* **Vehicle to Rental**: One Vehicle can have many Rental Records over time (1 : N).
+* **Rental Staff to Rental**: One Rental Staff manages multiple Rentals (1 : N).
+* **Rental to Return**: One Rental generates exactly one Return Record (1 : 1).
+* **Rental to Payment**: One Rental generates exactly one Payment Record (1 : 1).
+* **Category to Vehicle**: One Category contains many Vehicles (1 : N).
+
+### Text-Based ERD Architecture
+```text
+  [ Category ] 1 ───< N [ Vehicle ] 1 ───< N [ Rental ] N >─── 1 [ Customer ]
+                                                │    │
+                                          1    │    │ 1
+                                       ┌────────┘    └────────┐
+                                       ▼                      ▼
+                                 [ Return ]              [ Payment ]

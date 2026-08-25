@@ -1,0 +1,5 @@
+Login → Dashboard → Overview (Stats/Revenue)
+                     ├── Manage Users (Staff/Customer accounts)
+                     ├── Manage Vehicles (Add/Edit/Delete)
+                     ├── Manage Bookings & Returns
+                     └── Financial Reports

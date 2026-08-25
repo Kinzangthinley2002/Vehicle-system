@@ -1,0 +1,13 @@
+Customer Requests Rental
+          │
+          ▼
+Staff Confirms Booking ──► Vehicle Status: "rented"
+          │
+          ▼
+Vehicle Returned ────────► Staff Inspects Vehicle
+          │
+          ▼
+Payment Processed ───────► Vehicle Status: "available"
+          │
+          ▼
+Dashboard Updated (Revenue & Stats)
